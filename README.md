@@ -5,7 +5,7 @@
 * localtunnel
 
 ## Install
-`npm install -g localtunnel`
+`$ npm install -g localtunnel`
 
 ## Getting Start
 LINE Messaging APIのchannel secretとchannel access tokenを取得する
@@ -25,4 +25,4 @@ $ ./badminton-game-maker
 ```
 
 localtunnelでポートを公開する  
-`lt --port <your_port> --subdomain <your_webhook_url>`
+`$ lt --port <your_port> --subdomain <your_webhook_url>`
