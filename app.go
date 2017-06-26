@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	bot, err := linebot.New(os.Getenv("ULIS_SECRET"), os.Getenv("ULIS_ACCESS_TOKEN"))
+	bot, err := linebot.New(os.Getenv("BAD_SECRET"), os.Getenv("BAD_ACCESS_TOKEN"))
 	if err != nil {
 		panic(err)
 	}
@@ -69,7 +69,7 @@ func main() {
 		}
 	})
 
-	if err := http.ListenAndServe(":3105", nil); err != nil {
+	if err := http.ListenAndServe(":"+os.Getenv("BAD_PORT"), nil); err != nil {
 		panic(err)
 	}
 
